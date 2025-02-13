@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { Trophy, Plus, Trash2, Medal } from 'lucide-react';
+import {  Plus, Trash2, Medal } from 'lucide-react';
 import Image from "next/image";
 import logo from "@/app/public/logo.png"
 import Link from 'next/link';
@@ -45,13 +45,13 @@ function App() {
 
   const getRankStyle = (index: number) => {
     switch(index) {
-      case 0: // Gold
+      case 0: 
         return "bg-yellow-100 text-yellow-800 border-yellow-300";
-      case 1: // Silver
+      case 1: 
         return "bg-gray-100 text-gray-800 border-gray-300";
-      case 2: // Bronze
+      case 2: 
         return "bg-orange-100 text-orange-800 border-orange-300";
-      default: // Normal
+      default: 
         return "bg-blue-50 text-blue-800 border-blue-200";
     }
   };
@@ -67,9 +67,8 @@ function App() {
         </div>
       </header>
 
-      {/* Main Content */}
+      
       <main className="container mx-auto px-4 py-8">
-        {/* Add Team Form */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">Add New Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -103,8 +102,6 @@ function App() {
             </button>
           </div>
         </div>
-
-        {/* Teams List */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">Teams</h2>
           <div className="space-y-4">
